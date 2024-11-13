@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --black: #141414;
+  --dark-gray: #221f1f;
+  --red: #e50914;
+  --light-gray: #333;
+  --white: #ffffff;
+}
+
+body {
+  background-color: var(--dark-gray);
+  color: var(--white);
+  font-family: "Funnel Display", Helvetica, Arial, sans-serif;
+  @apply min-h-screen;
+}
+
+/* Navbar Styles */
+.navbar {
+  @apply py-4 fixed top-0 left-0 right-0 z-50;
+}
+
+.navbar-container {
+  background-color: var(--black);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @apply container;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+}
+
+.nav-logo-container {
+  @apply flex items-center gap-2;
+}
+
+.nav-logo-icon {
+  @apply shrink-0;
+}
+
+.navbar-logo {
+  @apply tracking-widest font-semibold text-2xl;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  @apply bg-white;
+  color: var(--black);
+  text-decoration: none;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.nav-link:hover {
+  @apply bg-red-500 text-white;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .navbar-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-links {
+    margin-top: 1rem;
+    flex-direction: column;
+  }
+
+  .nav-link {
+    @apply w-full;
+  }
+}
+
+/* ============= Home Page Styles ============= */
+
+.home-page {
+  @apply min-h-screen flex flex-col pt-24 justify-center items-center text-center p-4;
+}
+
+.home-title {
+  @apply text-5xl font-semibold tracking-widest text-red-500 mb-6;
+}
+
+.home-desc {
+  @apply text-xl text-zinc-400 max-w-xl;
+}
+
+/* ============= Dashboard Page Styles ============= */
+
+.dashboard-container {
+  @apply container mx-auto px-4 pt-32 pb-8;
+}
+
+.dashboard-loading-container {
+  @apply container mx-auto px-4 pt-48 pb-8 text-center;
+}
+
+.dashboard-header {
+  @apply text-2xl font-bold mb-6;
+}
+
+.watchlist-grid {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6;
+}
+
+.watchlist-empty-message {
+  @apply text-center text-gray-500;
+}
+
+.watchlist-card {
+  @apply border border-zinc-800 rounded-lg p-4 shadow-md bg-zinc-900 flex flex-col justify-between;
+}
+
+.watchlist-card-header {
+  @apply flex justify-between items-center mb-2;
+}
+
+.watchlist-card-footer {
+  @apply flex justify-between items-center;
+}
+
+.watchlist-card-header span {
+  @apply text-sm text-gray-500;
+}
+
+.watchlist-card p {
+  @apply text-gray-600 mb-4;
+}
+
+.watchlist-card .status-badge {
+  @apply px-2 py-1 rounded text-sm;
+}
+
+.watchlist-card .status-badge-watched {
+  @apply bg-green-100 text-green-800;
+}
+
+.watchlist-card .status-badge-planning {
+  @apply bg-blue-100 text-red-800;
+}
+
+.watchlist-card .toggle-button {
+  @apply px-3 py-1 bg-red-500 text-white rounded hover:bg-red-600 transition-colors;
+}
+
+.watchlist-add-form {
+  @apply border border-zinc-800 mt-8 rounded-lg p-4 bg-zinc-900 shadow-md;
+}
+
+.watchlist-add-form-expand-button {
+  @apply w-full py-2 bg-red-500 text-white rounded hover:bg-red-600 transition-colors;
+}
+
+.watchlist-add-form-container {
+  @apply space-y-4;
+}
+
+.watchlist-add-form-label {
+  @apply block mb-2 text-sm font-medium;
+}
+
+.watchlist-add-form-input {
+  @apply w-full px-3 bg-zinc-800 border-zinc-700 text-white py-2 border rounded;
+}
+
+.watchlist-add-form-grid {
+  @apply grid grid-cols-2 gap-4;
+}
+
+.watchlist-add-form-buttons {
+  @apply flex space-x-4;
+}
+
+.watchlist-add-form-submit-button {
+  @apply flex-1 py-2 bg-red-500 text-white rounded hover:bg-red-600 transition-colors;
+}
+
+.watchlist-add-form-cancel-button {
+  @apply flex-1 py-2 bg-zinc-700 text-zinc-300 rounded hover:bg-zinc-600 transition-colors;
+}

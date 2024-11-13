@@ -136,11 +136,11 @@ body {
 }
 
 .watchlist-card-header span {
-  @apply text-sm text-gray-500;
+  @apply text-sm text-zinc-600;
 }
 
 .watchlist-card p {
-  @apply text-gray-600 mb-4;
+  @apply text-zinc-400 mb-4;
 }
 
 .watchlist-card .status-badge {
@@ -184,7 +184,7 @@ body {
 }
 
 .watchlist-add-form-buttons {
-  @apply flex space-x-4;
+  @apply flex space-x-4 pt-2;
 }
 
 .watchlist-add-form-submit-button {

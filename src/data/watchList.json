@@ -1,23 +1,23 @@
 [
   {
     "id": 1,
-    "title": "Harry Potter and the Philosopher's Stone",
-    "description": "A young wizard discovers his magical heritage and begins his journey at Hogwarts School of Witchcraft and Wizardry.",
+    "title": "Spider-Man: Home Sweet Home",
+    "description": "A movie about a spider that becomes a superhero after being bitten by a nerdy high school student.",
     "type": "Movie",
     "status": "Watched"
   },
   {
     "id": 2,
-    "title": "Stranger Things",
-    "description": "A sci-fi horror series about mysterious supernatural events in a small town.",
+    "title": "One Piece",
+    "description": "A young girl named Monkey D. Luffy embarks on a journey to become the next Pirate Queen.",
     "type": "TV Show",
     "status": "Planning"
   },
   {
     "id": 3,
-    "title": "The Shawshank Redemption",
-    "description": "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.",
-    "type": "Movie",
+    "title": "Breaking Good",
+    "description": "A story about a struggling chemistry teacher who decides to use his skills for a more wholesome purpose: making bread.",
+    "type": "Show",
     "status": "Planning"
   }
 ]
